@@ -292,20 +292,6 @@
     - Убедиться, что действия выполняются за 3 клика или меньше
   expected-result: >
       Интерфейс интуитивно понятен по всем критериям
-
-- summary: |
-          Время загрузки главной страницы
-  requirement: |
-          Время загрузки главной страницы не должно превышать 3 секунды
-  prerequisites: |
-          Открыта главная страница сайта
-  test-data: |
-          Скорость интернета 50 Mbps
-  steps:
-    - Измерить время загрузки главной страницы
-  expected-result: >
-      Время загрузки главной страницы ≤ 3 секунды
-
 - summary: |
     Отображение статистики пользователя
   requirement: >
@@ -446,3 +432,39 @@
     - Перейти на страницу профиля
   expected-result: |
     Интерфейс упрощен, основные элементы легко доступны
+    - summary: |
+    Анализ производительности сайта при имитации высокой нагрузки
+  requirement: |
+    Сайт должен стабильно работать при высоком трафике
+    - First Contentful Paint (FCP): < 10 секунд
+    - Largest Contentful Paint (LCP): < 25 секунд
+    - Total Blocking Time (TBT): < 1,500 мс
+    - Cumulative Layout Shift (CLS): < 0.25
+    - Performance Score: > 50
+  prerequisites: |
+    Установлен Chrome браузер
+    Настроены ограничения ресурсов (3G, CPU slowdown)
+  test-data: |
+    Тип подключения: 3G
+    CPU Throttling: 4x slowdown
+    Страница: https://codebattle.hexlet.io
+  steps:
+    - Открыть страницу входа: https://codebattle.hexlet.io
+    - Включить мобильные настройки в DevTools
+    - Настроить throttling: Fast 3G, 4x CPU slowdown
+    - Запустить аудит Lighthouse Performance
+    - Проанализировать метрики производительности
+  expected-result: >
+    Сайт должен соответствовать установленным критериям производительности
+    при имитации высокой нагрузки
+  actual-results: |
+    Результаты Lighthouse:
+    - First Contentful Paint (FCP): 6.4 секунды
+    - Largest Contentful Paint (LCP): 20.5 секунды
+    - Total Blocking Time (TBT): 1,310 мс
+    - Cumulative Layout Shift (CLS): 0.416
+    - Performance Score: 11
+  conclusion: |
+    Сайт не соответствует требованиям по Performance Score и CLS.
+    Требуется оптимизация производительности.
+
