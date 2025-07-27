@@ -1,0 +1,75 @@
+- summary: |
+    Успешная регистрация пользователя через email
+  status: pass
+- summary: |
+     Регистрация с паролем меньше минимальной длины 
+  status: pass
+- summary: |
+  Регистрация с минимальной длиной логина
+  status: pass
+- summary: |
+    Регистрация с существующим логином
+  status: pass
+- summary: |
+     Успешная регистрация через Discord
+  status: pass
+- summary: |
+     Успешная регистрация через GitHub
+  status: pass
+- summary: |
+    Регистрация с уже существующим email
+  status: pass
+- summary: |
+     Регистрация с пустыми полями формы
+  status: pass
+- summary: |
+     Авторизация с пустыми полями формы
+  status: pass
+- summary: |
+    Успешная авторизация пользователя через GitHub
+  status: pass
+- summary: |
+    Успешная авторизация пользователя через Discord
+  status: pass
+- summary: |
+    Восстановление пароля через email
+  status: pass
+- summary: |
+    Адаптация интерфейса для мобильных устройств
+  status: pass
+- summary: |
+    Кроссбраузерная совместимость
+  status: pass
+- summary: |
+     Использование HTTPS
+  status: pass
+- summary: |
+    Успешная защита от XSS-атак
+  status: pass
+- summary: |
+    Отображение статистики пользователя
+  status: pass
+- summary: |
+   Успешное редактирование профиля пользователя
+  status: pass
+- summary: |
+    Успешное переключение языка интерфейса  в задаче
+  status: pass
+- summary: |
+    Успешное присоединение к созданой игре
+  status: pass
+- summary: |
+   Работа таймера обратного отсчета во время соревнования
+  status: pass
+- summary: |
+   Работа онлайн-редактора кода с подсветкой синтаксиса
+  status: pass
+- summary: |
+  Корректное отображение редактора кода на мобильном устройстве
+  status: pass
+- summary: |
+  Упрощенный интерфейс для мобильных устройств
+  status: pass
+- summary: |
+  Анализ производительности сайта при имитации высокой нагрузки
+  status: pass
