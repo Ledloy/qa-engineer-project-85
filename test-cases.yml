@@ -457,14 +457,4 @@
   expected-result: >
     Сайт должен соответствовать установленным критериям производительности
     при имитации высокой нагрузки
-  actual-results: |
-    Результаты Lighthouse:
-    - First Contentful Paint (FCP): 6.4 секунды
-    - Largest Contentful Paint (LCP): 20.5 секунды
-    - Total Blocking Time (TBT): 1,310 мс
-    - Cumulative Layout Shift (CLS): 0.416
-    - Performance Score: 11
-  conclusion: |
-    Сайт не соответствует требованиям по Performance Score и CLS.
-    Требуется оптимизация производительности.
 
