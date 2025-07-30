@@ -1,4 +1,4 @@
-- issue: https://github.com/hexlet-codebattle/codebattle/issues/2186
-  original_issue: https://github.com/hexlet-codebattle/codebattle/issues/2135
+- issue: - url: https://github.com/hexlet-codebattle/codebattle/issues/2186
+  original_issue: - url: https://github.com/hexlet-codebattle/codebattle/issues/2135
   status: reopened
   description: Codebattle version not displayed on landing page
