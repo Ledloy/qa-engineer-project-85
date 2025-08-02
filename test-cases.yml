@@ -9,7 +9,7 @@
       Email 
       Пароль
   steps: 
-      перейти с главной страницы на страницу регистрации https://codebattle.hexlet.io/users/new 
+      - перейти с главной страницы на страницу регистрации https://codebattle.hexlet.io/users/new 
       - Ввести имя 
       - Ввести email 
       - Ввести пароль 
