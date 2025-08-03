@@ -225,11 +225,7 @@
   steps:
     - Открыть URL https://codebattle.hexlet.io/
     - Авторизоваться на сайте
-    - Проверить отображение и выполнение действий на страницах сайта:
-      - https://codebattle.hexlet.io/#lobby
-      - https://codebattle.hexlet.io/#tournaments
-      - https://codebattle.hexlet.io/#completedGames
-      - https://codebattle.hexlet.io/users
+    - Проверить отображение и выполнение действий на страницах сайта: https://codebattle.hexlet.io/#lobby, https://codebattle.hexlet.io/#tournaments, https://codebattle.hexlet.io/#completedGames, https://codebattle.hexlet.io/users
   expected-result: |
     - Интерфейс корректно адаптируется под разрешение 375x812.
     - Все элементы отображаются правильно и доступны для взаимодействия.
