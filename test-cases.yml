@@ -211,18 +211,7 @@
     - Нажать "Сохранить"
   expected-result: |
     Пароль успешно изменён
-
-- summary: |
-    Адаптация интерфейса для мобильных устройств
-  requirement: |
-    Интерфейс должен адаптироваться под мобильные устройства
-  prerequisites: |
-    Сайт https://codebattle.hexlet.io открыт в браузере на ПК.
-    Активирован режим DevTools (Mobile View) с разрешением 375x812.
-  test-data: |
-    Разрешение экрана: 375x812 (iPhone X)
-    Браузер: Chrome 136.0.7103.49
-    Тестовый аккаунт для авторизации
+    
  - summary: |
     Адаптация интерфейса для мобильных устройств
   requirement: |
@@ -237,12 +226,11 @@
   steps:
     - Открыть URL https://codebattle.hexlet.io/
     - Авторизоваться на сайте
-    - |
-      Проверить отображение и выполнение действий на страницах сайта:
-      https://codebattle.hexlet.io/#lobby,
-      https://codebattle.hexlet.io/#tournaments,
-      https://codebattle.hexlet.io/#completedGames,
-      https://codebattle.hexlet.io/users
+    - Проверить отображение и выполнение действий на страницах сайта:
+      - https://codebattle.hexlet.io/#lobby
+      - https://codebattle.hexlet.io/#tournaments
+      - https://codebattle.hexlet.io/#completedGames
+      - https://codebattle.hexlet.io/users
   expected-result: |
     - Интерфейс корректно адаптируется под разрешение 375x812.
     - Все элементы отображаются правильно и доступны для взаимодействия.
