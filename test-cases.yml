@@ -242,11 +242,7 @@
   steps:
     - Открыть URL https://codebattle.hexlet.io/
     - Авторизоваться на сайте
-    - Проверить отображение и выполнение действий на страницах сайта:
-      - https://codebattle.hexlet.io/#lobby
-      - https://codebattle.hexlet.io/#tournaments
-      - https://codebattle.hexlet.io/#completedGames
-      - https://codebattle.hexlet.io/users
+    - Проверить, что интерфейс корректно отображается на всех основных разделах сайта: Лобби, Турниры, История игр, Профиль
   expected-result: |
     Сайт и страницы разделов отображаются корректно во всех браузерах.
 
